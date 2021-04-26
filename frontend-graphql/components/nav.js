@@ -23,11 +23,10 @@ const Nav = () => {
                   <ul className="uk-navbar-nav">
                     {categories.map((category, i) => {
                       return (
-                        <li key={category.id}>
+                        <li key={category.slug}>
                           <Link
                             href={{
-                              pathname: "category",
-                              query: { id: category.id }
+                              pathname: `category/${category.slug}`
                             }}
                           >
                             <a className="uk-link-reset">{category.name}</a>

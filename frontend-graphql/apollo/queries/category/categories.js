@@ -4,6 +4,7 @@ const CATEGORIES_QUERY = gql`
     categories {
       id
       name
+      slug
     }
   }
 `;
