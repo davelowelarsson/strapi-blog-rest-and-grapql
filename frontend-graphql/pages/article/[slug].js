@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";  
-import Query from "../components/query";  
+import Query from "../../components/query";  
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from 'rehype-raw'
 import Moment from "react-moment";  
-import ARTICLE_QUERY from "../apollo/queries/article/article";
+import ARTICLE_QUERY from "../../apollo/queries/article/article";
 const Article = () => {  
   const router = useRouter();
   return (

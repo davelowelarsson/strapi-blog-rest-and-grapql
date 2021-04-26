@@ -5,6 +5,7 @@ const CATEGORY_ARTICLES_QUERY = gql`
       name
       articles {
         id
+        slug
         title
         content
         image {
@@ -12,6 +13,7 @@ const CATEGORY_ARTICLES_QUERY = gql`
         }
         category {
           id
+          slug
           name
         }
       }
